@@ -64,8 +64,12 @@ export const TestAreaContainer = styled.div`
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
-    
 
+    textarea{
+      width: 500px !important;
+      height: 400px !important;
+    }
+    
     @media only screen and (max-width: 1200px){
        flex-direction: column;
        .userText{
