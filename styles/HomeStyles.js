@@ -64,7 +64,7 @@ export const TestAreaContainer = styled.div`
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
-    height: 65vh;
+    
 
     @media only screen and (max-width: 1200px){
        flex-direction: column;
@@ -73,20 +73,29 @@ export const TestAreaContainer = styled.div`
        }
        .userText, .mainText{
             textarea{
-                width: 500px;
-                height: 400px;
+                width: 500px !important;
+                height: 400px !important;
         }
     }
     
 
-    @media only screen and (max-width: 540px){
+    @media only screen and (max-width: 570px){
         .userText, .mainText{
              textarea{
-                 width: 350px;
-                 height: 350px;
+                 width: 350px !important;
+                 height: 350px !important;
               }
         }
      }
+
+     @media only screen and (max-width: 367px){
+      .userText, .mainText{
+           textarea{
+               width: 275px !important;
+               height: 300px !important;
+            }
+      }
+   }
   }
   
   .mainText, .userText{
